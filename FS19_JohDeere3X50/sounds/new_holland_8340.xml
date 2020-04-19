@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds>
+    <motorstart file="sounds/fordTW_start.wav" innerRadius="45.0" outerRadius="80.0" >
+		<volume indoor="1" outdoor="1" />
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+        <lowpassGain indoor="0.95" outdoor="1.0" />
+	</motorstart>
+	
+    <motorStop file="sounds/deutz_agrostar_661_stop.wav" innerRadius="45.0" outerRadius="80.0" >
+		<volume indoor="01" outdoor="1" />
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+        <lowpassGain indoor="0.85" outdoor="1.0" />
+	</motorStop>
+
+    <motor file="sounds/fordTW_idle.wav" innerRadius="45.0" outerRadius="80.0" >
+		<volume indoor="1" outdoor="1" >
+            <modifier type="MOTOR_RPM" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOTOR_RPM" value="0.80" modifiedValue="0.00" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOTOR_RPM" value="0.75" modifiedValue="2.00" />
+			
+			<modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+		<lowpassGain indoor="0.85" outdoor="0.00" />
+	</motor>
+	
+	<motor file="sounds/fordTW_idle.wav" innerRadius="45.0" outerRadius="80.0" >
+		<volume indoor="1" outdoor="1" >
+            <modifier type="MOTOR_RPM" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOTOR_RPM" value="0.80" modifiedValue="0.00" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOTOR_RPM" value="0.75" modifiedValue="2.00" />
+			
+			<modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+		<lowpassGain indoor="0.00" outdoor="1.0" />
+	</motor>
+	
+	<!-- MOTOR_OFFLOAD_RUN -->
+    <motor file="sounds/caseIH1455_load.wav" innerRadius="45.0" outerRadius="80.0" >
+		<volume indoor="1" outdoor="1" >
+            <modifier type="MOTOR_LOAD" value="0.0" modifiedValue="1.00" />
+            <modifier type="MOTOR_LOAD" value="1.0" modifiedValue="0.00" />
+			
+			<modifier type="MOTOR_RPM" value="0.00" modifiedValue="0.00" />
+            <modifier type="MOTOR_RPM" value="0.18" modifiedValue="1.00" />
+        </volume>
+		<pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.30" modifiedValue="0.75" />
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.00" />
+			
+			<modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+		<lowpassGain indoor="0.85" outdoor="0.00" />
+	</motor>
+	
+	<motor file="sounds/caseIH1455_load.wav" innerRadius="45.0" outerRadius="80.0" >
+		<volume indoor="0.00" outdoor="0.82" >
+            <modifier type="MOTOR_LOAD" value="0.0" modifiedValue="1.00" />
+            <modifier type="MOTOR_LOAD" value="1.0" modifiedValue="0.00" />
+			
+			<modifier type="MOTOR_RPM" value="0.00" modifiedValue="0.00" />
+            <modifier type="MOTOR_RPM" value="0.18" modifiedValue="1.00" />
+        </volume>
+		<pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.30" modifiedValue="0.75" />
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.00" />
+			
+			<modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+		<lowpassGain indoor="0.00" outdoor="1.0" />
+	</motor>
+	
+	<!-- MOTOR_ONLOAD_RUN -->
+    <motor file="sounds/caseIH1455_load.wav" innerRadius="45.0" outerRadius="80.0" >
+		 <volume indoor="1" outdoor="1" >
+            <modifier type="MOTOR_LOAD" value="0.00" modifiedValue="0.00" />
+            <modifier type="MOTOR_LOAD" value="1.00" modifiedValue="1.00" />
+			
+			<modifier type="MOTOR_RPM" value="0.00" modifiedValue="0.00" />
+            <modifier type="MOTOR_RPM" value="0.58" modifiedValue="1.00" />
+        </volume>
+		<pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.25" modifiedValue="0.75" />
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.00" />
+			
+			<modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+		<lowpassGain indoor="0.9" outdoor="0.00" />
+	</motor>
+	
+	 <motor file="sounds/caseIH1455_load.wav" innerRadius="45.0" outerRadius="80.0" >
+		 <volume indoor="0.00" outdoor="0.91" >
+            <modifier type="MOTOR_LOAD" value="0.00" modifiedValue="0.00" />
+            <modifier type="MOTOR_LOAD" value="1.00" modifiedValue="1.00" />
+			
+			<modifier type="MOTOR_RPM" value="0.00" modifiedValue="0.00" />
+            <modifier type="MOTOR_RPM" value="0.58" modifiedValue="1.00" />
+        </volume>
+		<pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.25" modifiedValue="0.75" />
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.00" />
+			
+			<modifier type="COMBINE_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="COMBINE_LOAD" value="1.00" modifiedValue="0.90" />
+
+            <modifier type="MOWER_LOAD" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOWER_LOAD" value="1.00" modifiedValue="0.90" />
+        </pitch>
+		<lowpassGain indoor="0.00" outdoor="1.0" />
+	</motor>
+	
+	<!-- GEARBOX-NOISE -->
+	<motor file="sounds/661_Gearbox2.wav" innerRadius="40.0" outerRadius="80.0" >
+		<volume indoor="0.73" outdoor="0.56" >
+            <modifier type="SPEED" value="0.0" modifiedValue="0.00" />
+            <modifier type="SPEED" value="14.5" modifiedValue="1.00" />
+        </volume>
+        <pitch indoor="0.97" outdoor="0.97" >
+            <modifier type="SPEED" value="0.0" modifiedValue="0.80" />
+            <modifier type="SPEED" value="33.0" modifiedValue="0.98" />
+        </pitch>
+        <lowpassGain indoor="0.97" outdoor="1.00" />
+	</motor>
+	
+	<!-- GEARBOX -->
+    <gearbox file="sounds/661_Gearbox1.wav"innerRadius="45.0" outerRadius="80.0" >
+		<volume indoor="0.38" outdoor="0.85" >
+            <modifier type="SPEED" value="0.00" modifiedValue="0.0" />
+            <modifier type="SPEED" value="30.0" modifiedValue="1.0" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="SPEED" value="0.10" modifiedValue="0.80" />
+            <modifier type="SPEED" value="40.0" modifiedValue="1.2" />
+        </pitch>
+        <lowpassGain indoor="0.8" outdoor="1.0" />
+	</gearbox>
+	
+    <retarder template="DEFAULT_RETARDER" file="$data/sounds/vehicles/retarder/retarder_loop_02.wav" linkNode="0>"/>
+
+  <!--  <airCompressorStart template="BRAKE_COMPRESSOR_START" linkNode="0>"/>
+    <airCompressorStop template="BRAKE_COMPRESSOR_STOP" linkNode="0>"/>
+    <airCompressorRun template="BRAKE_COMPRESSOR_RUN" linkNode="0>"/>
+    <compressedAir template="BRAKE_SMALL" linkNode="0>"/>
+    <airRelease template="BRAKE_REGULATOR_VALVE" linkNode="0>"/> -->
+
+	<airCompressorStart file="sounds/compressor_controller.wav" innerRadius="40.0" outerRadius="80.0" >
+        <volume indoor="0.65" outdoor="0.70" />
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.8" outdoor="1.0" />
+	</airCompressorStart>
+	<airCompressorStop file="sounds/pressure_regulator.wav" innerRadius="40.0" outerRadius="80.0" >
+        <volume indoor="0.65" outdoor="0.70" />
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.8" outdoor="1.0" />
+	</airCompressorStop>
+	<airCompressorRun file="sounds/compressor_idle_loop.wav" innerRadius="40.0" outerRadius="80.0" fadeOut="0.1">
+        <volume indoor="0.55" outdoor="0.55" />
+        <pitch indoor="0.95" outdoor="0.95" />
+        <lowpassGain indoor="0.8" outdoor="1.0" />
+	</airCompressorRun>	
+	<compressedAir file="sounds/brake_small.wav" innerRadius="40.0" outerRadius="80.0" >
+        <volume indoor="1.15" outdoor="1.45">
+            <modifier type="BRAKE_TIME" value="0.0" modifiedValue="0.0" />
+            <modifier type="BRAKE_TIME" value="1.0" modifiedValue="1.0" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.8" outdoor="1.0" />
+	</compressedAir>
+	<airRelease file="sounds/regulator_valve_01.wav" innerRadius="40.0" outerRadius="80.0" >
+        <volume indoor="0.55" outdoor="0.95" />
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.8" outdoor="1.0" />
+		</airRelease>
+	
+   <!-- <reverseDrive template="REVERSE_BEEP_03" linkNode="0>" /> -->
+</sounds>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="44">
+    <author>GModding</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>John Deere 3x50</en>
+        <de>John Deere 3x50</de>
+    </title>
+    <description>
+        <en>John Deere 3x50</en>
+        <de>John Deere 3x50</de>
+    </description>
+    <multiplayer supported="true"/>
+    
+	<specializations>
+        <specialization name="interactiveControl" className="InteractiveControl" filename="Scripts/InteractiveControl.lua" />
+        <specialization name="interactiveWindows" className="InteractiveWindows" filename="Scripts/InteractiveWindows.lua" />	
+        <specialization name="zylinderV2" className="zylinderV2" filename="Scripts/zylinderV2.lua"/>	
+    </specializations>
+    <vehicleTypes>
+		<type name="JD6350"  className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua"  parent="baseDrivable">
+			<specialization name="interactiveControl" />
+			<specialization name="interactiveWindows" />	
+			<specialization name="zylinderV2" />				
+		</type>	
+			
+    </vehicleTypes>	
+	
+	<l10n>
+		<text name="INTERACTIVE_CONTROL_SWITCH"><en>Switch IC State</en><de>IC an/abschalten</de><fr>Activer/Désactiver le CI</fr></text>
+		<text name="InteractiveControl_Off"><en>Disable IC</en><de>IC ausschalten</de><fr>Désactiver le CI</fr></text>
+		<text name="InteractiveControl_On"><en>Enable IC</en><de>IC anschalten</de><fr>Activer le CI</fr></text>
+		<text name="ic_component_close"><en>Left Mouse Button: close %s</en><de>Linke Maustaste: %s schließen</de><fr>Clic gauche : fermer %s</fr></text>
+		<text name="ic_component_open"><en>Left Mouse Button: open %s</en><de>Linke Maustaste: %s öffnen</de><fr>Clic gauche : ouvrir %s</fr></text>
+		<text name="ic_button_on"><en>Left Mouse Button: activate %s</en><de>Linke Maustaste: %s anschalten</de><fr>Clic gauche : activer %s</fr></text>
+		<text name="ic_button_off"><en>Left Mouse Button: deactivate %s</en><de>Linke Maustaste: %s ausschalten</de><fr>Clic gauche : désactiver %s</fr></text>
+		<text name="doorL"><en>Door</en><de>Tür</de></text>
+		<text name="backWindow"><en>Back window</en><de>Heckfenster</de></text>	
+		<text name="topWindow"><en>Front window</en><de>Frontfenster</de></text>
+        <text name="SET_DOOROPENER"><en>Open/Close door</en><de>Tür öffnen/schließen</de></text>
+		<text name="SET_WARNING_SIGN"><en>Part add/remove</en><de>Part add/remove</de></text>
+		<text name="Kat3">
+			<de>Heckhyd. Kat 3</de>
+			<en>Backhyd. cat 3</en>			
+		</text>	
+		
+		<text name="Kat2">
+			<de>Heckhyd. Kat 2</de>
+			<en>Backhyd. cat 2</en>			
+		</text>
+		
+		
+		
+		
+		
+		
+	</l10n>
+	<actions>	
+		<action name="IC_SPACE" 				category="VEHICLE"		axisType="HALF"/>
+		<action name="IC_MOUSE" 				category="VEHICLE"		axisType="HALF"/>
+	</actions>
+	<inputBinding>
+		<actionBinding action="IC_SPACE">
+			<binding device="KB_MOUSE_DEFAULT" 	input="KEY_space" axisComponent="+" neutralInput="0" index="1"/>
+		</actionBinding>
+		<actionBinding action="IC_MOUSE">
+			<binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_LEFT" index="3"/>
+		</actionBinding>
+	</inputBinding>		
+	
+	<iconFilename>Texture/store.dds</iconFilename>
+    <storeItems>
+        <storeItem rootNode="vehicle" xmlFilename="JohnDeere_3x50_Series.xml"/>
+    </storeItems>
+</modDesc>
