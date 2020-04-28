@@ -37,6 +37,55 @@
         </schemaOverlay>
     </base>
     
+	<realManualTransmissionConfigurations>
+		<realManualTransmissionConfiguration name="JD3x50 PwrSync 30" price="0" >
+			<realManualTransmission>
+				<gears defaultGear="1" powerShift="true">
+					<gear speed="11.40"  name="1"	/>
+					<gear speed="15.80"  name="2"	/>
+					<gear speed="22.70"  name="3"	/>
+					<gear speed="30.60"	 name="4"	/>
+				</gears>
+				<rangeSet1 defaultRange="3" powerShift="false" >
+					<range ratio="0.448" name="R" isReverse="true" />
+					<range ratio="0.814" name="LO" />
+					<range ratio="1.000" name="HI" />
+				</rangeSet1>
+				<rangeSet2 defaultRange="2" powerShift="false" >
+					<range ratio="0.291" name="L" />
+					<range ratio="1.000" name="S" />
+				</rangeSet2>
+				<reverser type="normal" > 
+					<ratios forward="1" reverse="1" />
+					<settings brakeAggressionBias="0.3" clutchTime="500" />
+				</reverser>	
+			</realManualTransmission>
+		</realManualTransmissionConfiguration>
+		<realManualTransmissionConfiguration name="JD3x50 PwrSync 40" price="1500" >
+			<realManualTransmission>
+				<gears defaultGear="1" powerShift="true">
+					<gear speed="11.40"  name="1"	/>
+					<gear speed="17.10"  name="2"	/>
+					<gear speed="26.40"  name="3"	/>
+					<gear speed="40.10"	 name="4"	/>
+				</gears>
+				<rangeSet1 defaultRange="3" powerShift="false" >
+					<range ratio="0.360" name="R" isReverse="true" />
+					<range ratio="0.816" name="LO" />
+					<range ratio="1.000" name="HI" />
+				</rangeSet1>
+				<rangeSet2 defaultRange="2" powerShift="false" >
+					<range ratio="0.234" name="L" />
+					<range ratio="1.000" name="S" />
+				</rangeSet2>
+				<reverser type="normal" > 
+					<ratios forward="1" reverse="1" />
+					<settings brakeAggressionBias="0.3" clutchTime="500" />
+				</reverser>	
+			</realManualTransmission>
+		</realManualTransmissionConfiguration>
+	</realManualTransmissionConfigurations>
+
     
 	<wheels>
         <wheelConfigurations>
